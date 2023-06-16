@@ -1,38 +1,142 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Overpass", "Lucida Sans", "Lucida Sans Regular";
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 420px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5em;
+  background-color: hsl(216, 12%, 8%);
+  padding: 2em;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.starBackground {
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  width: 3em;
+  height: 3em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.starImage {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 0.9em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.question {
+  color: #ffffff;
+  font-size: xx-large;
+  margin-bottom: unset;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.description {
+  color: hsl(216, 12%, 54%);
+  font-size: medium;
+  line-height: 1.5em;
+}
+
+.options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  margin-bottom: 1em;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.options > span {
+  display: block;
+  width: 3.2em;
+  height: 3.2em;
+  text-align: center;
+  background-color: hsl(213, 19%, 18%);
+  padding: 1em;
+  border-radius: 50%;
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.options > span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #ffffff;
+}
+
+.options > span:active {
+  background-color: hsl(216, 12%, 54%);
+  color: #ffffff;
+}
+
+.lastOption {
+  margin: unset;
+}
+
+.submitBtn {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 2em;
+  border: solid 0;
+  height: 3.5em;
   color: white;
+  margin-top: 1em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-family: Overpass;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.submitBtn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(25, 97%, 90%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card>.ratingInfo,.thankImg,.thankYouText,.description {
+  text-align: center;
+}
+
+.thankImg {
+  width: 140px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ratingInfo {
+  margin-left: auto;
+  margin-right: auto;
+  color: hsl(25, 97%, 60%);
+  background-color: hsl(213, 19%, 18%);
+  width: 12.5em;
+  height: 2em;
+  border-radius: 1em;
+  vertical-align: middle;
+  margin-bottom: 1em;
+}
+
+.ratingInfo>p {
+  margin: unset;
+  margin-top: 0.4em;
+}
+
+.thankYouText {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: unset;
 }
