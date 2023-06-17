@@ -14,8 +14,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ## Overview
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/shank-codes/ratingcomponent)
-- Live Site URL: [Add live site URL here](https://shank-codes.github.io/ratingcomponent)
+- Solution URL: [https://github.com/shank-codes/ratingcomponent]
+- Live Site URL: [https://shank-codes.github.io/ratingcomponent]
 
 ## My process
 

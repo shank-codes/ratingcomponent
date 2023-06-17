@@ -7,8 +7,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/submit/:selectedNumber" element={<Thankyou />} />
+        <Route path="/ratingcomponent/" element={<Home />} />
+        <Route path="/ratingcomponent/submit/:selectedNumber" element={<Thankyou />} />
       </Routes>
     </Router>
   );

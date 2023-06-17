@@ -22,14 +22,6 @@ const Home = () => {
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      {/* {[1, 2, 3, 4, 5].map((number, index) => (
-        <span
-          key={index}
-          className={clickedIndex === index ? 'clicked' : ''}
-          onClick={() => handleClick(index)}
-        >
-          {number}
-        </span> */}
         <div className="options">
           {
             [1,2,3,4,5].map((val, index) => (
@@ -42,14 +34,7 @@ const Home = () => {
             ))
           }
         </div>
-      {/* <div className="options">
-        <span onClick={() => handleNumberClick(1)} className="one">  1</span>
-        <span onClick={() => handleNumberClick(2)} className="two">  2</span>
-        <span onClick={() => handleNumberClick(3)} className="three">3</span>
-        <span onClick={() => handleNumberClick(4)} className="four"> 4</span>
-        <span onClick={() => handleNumberClick(5)} className="five"> 5</span>
-      </div> */}
-      <Link to={`/submit/${number}`}>
+      <Link to={`/ratingcomponent/submit/${number}`}>
       <button className="submitBtn" disabled={!number}>
         SUBMIT
       </button>
