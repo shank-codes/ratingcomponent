@@ -79,9 +79,9 @@ body {
   color: #ffffff;
 }
 
-.options > span:active {
-  background-color: hsl(216, 12%, 54%);
-  color: #ffffff;
+.clicked {
+  background-color: hsl(216, 12%, 54%) !important;
+  color: #ffffff !important;
 }
 
 .lastOption {
@@ -99,6 +99,7 @@ body {
   letter-spacing: 0.2em;
   font-family: Overpass;
   cursor: pointer;
+  width: 100%;
 }
 
 .submitBtn:hover {
@@ -139,4 +140,10 @@ body {
   font-weight: bold;
   font-size: xx-large;
   margin: unset;
+}
+
+@media ( max-width: 450px) {
+  .card {
+    width: 90%;
+  }
 }

@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Thankyou from "./Thankyou";
@@ -9,11 +8,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/submit" element={<Thankyou />} />
+        <Route path="/submit/:selectedNumber" element={<Thankyou />} />
       </Routes>
     </Router>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);

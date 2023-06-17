@@ -1,7 +1,8 @@
 import React from "react";
+import {useParams} from 'react-router-dom';
 
 const Thankyou = () => {
-  const val = 4;
+  const { selectedNumber } = useParams();
   return (
     <div className="card">
       <img
@@ -10,7 +11,7 @@ const Thankyou = () => {
         alt="thank you"
       ></img>
       <div className="ratingInfo">
-        <p>You selected {val} out of 5</p>
+        <p>You selected {selectedNumber} out of 5</p>
       </div>
       <p className="thankYouText">
         Thank you!
